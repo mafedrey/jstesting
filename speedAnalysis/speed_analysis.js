@@ -30,6 +30,8 @@ startTime = new Date().getTime();
                 return word !== "";
             }).length;
 
+           // var wordLength = userTypedText.length;
+
             var wpm = 0; // Default value
 
             if (timeElapsed !== 0 && !isNaN(typedWords)) {
@@ -41,5 +43,7 @@ startTime = new Date().getTime();
             outputDiv.innerHTML = "<h2>Typing Test Results:</h2>" +
                 "<p>Words Typed: " + typedWords + "</p>" +
                 "<p>Time Elapsed: " + timeElapsed.toFixed(2) + " seconds</p>" +
-                "<p>Words Per Minute (WPM): " + wpm + "</p>";
+                "<p>Length of Words: " + wpm + "</p>" +
+                "<p>Total Length of text: " + userTypedText.length + "</p>"
+               // "<p>Words Per Minute (Word Length): " + wordLength + "</p>";
             }
